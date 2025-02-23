@@ -1,0 +1,6 @@
+export * from './Home'
+export * from './SangKien'
+export * from './ChiTietSangKien'
+export * from './NhaTruyenThong'
+export * from './LoiBacHoDay'
+export * from './ChiTietLoiBacDay'
