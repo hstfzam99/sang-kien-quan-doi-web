@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid2, styled, Typography } from "@mui/material"
+import { Box, Button, Container, Grid2, Stack, styled, Typography } from "@mui/material"
 import { useNavigate } from "react-router"
 
 const actions = [
@@ -15,12 +15,12 @@ const actions = [
     {
         title: "Tin tức nổi bật",
         image: '',
-        link: ''
+        link: '/sang-kien'
     },
     {
         title: "Lời Bác dạy",
         image: '',
-        link: ''
+        link: '/loi-bac-ho-day'
     },
 ]
 export const QuickActions = () => {
@@ -32,10 +32,10 @@ export const QuickActions = () => {
                     {actions.map((action) =>
                         <Grid2 item size={6} sx={{ backgroundColor: 'white' }}>
 
-                            <QuickActionItem 
-                                title={action.title} 
-                                image={action.image} 
-                                link={action.link}    
+                            <QuickActionItem
+                                title={action.title}
+                                image={action.image}
+                                link={action.link}
                             />
                         </Grid2>
                     )}
@@ -48,12 +48,16 @@ export const QuickActions = () => {
 const QuickActionItem = (props) => {
     const navigate = useNavigate()
 
-    const onBtnClick = ()=>navigate(props.link)
+    const onBtnClick = () => navigate(props.link)
     return (
         <Box px={2} py={2}>
-            <img src="images/haucan.jpg" />
-            <Typography>{props.title}</Typography>
-            <DetailButton variant="contained" onClick={onBtnClick}>Xem thêm</DetailButton>
+            <Stack spacing={1}>
+                <img src="images/haucan.jpg" />
+                <Box>
+                    <Typography sx={{ fontWeight: 700, mb: 1 }}>{props.title}</Typography>
+                    <DetailButton variant="contained" onClick={onBtnClick}>Xem thêm</DetailButton>
+                </Box>
+            </Stack>
         </Box>
     )
 }
