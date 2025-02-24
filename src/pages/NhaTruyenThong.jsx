@@ -5,13 +5,13 @@ import { OPACITY_TO_HEX, PageTitleText } from "../constants"
 const items = [
     {
         id: 1,
-        title: "Nhà Truyền Thống 1",
-        image: '/images/baibanak.jpg',
+        title: "Nhà Truyền Thống số 1",
+        image: '/images/baotanglichsu1.jpg',
     },
     {
         id: 2,
-        title: "Phòng Hồ Chí Minh",
-        image: '/images/anh.jpg'
+        title: "Nhà Truyền Thống số 2",
+        image: '/images/quandoan2.jpg'
     },
 ]
 export const NhaTruyenThong = () => {
@@ -49,7 +49,7 @@ const NhaTruyenThongItem = (props) => {
     const navigate = useNavigate()
 
     const onBtnClick = () => {
-        navigate(`${props.id}`)
+        // navigate(`${props.id}`)
     }
     return (
         <Box px={2} py={2}>

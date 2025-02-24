@@ -4,18 +4,18 @@ import { OPACITY_TO_HEX, PageTitleText } from '../constants'
 
 const items = [
     {
-        id: 2,
-        title: "Mặt nạ phòng hóa đa dụng",
-        author: 'Thượng úy Lương Quang Hùng',
-        image: '/images/baibanak.jpg',
-        sound: ''
-    },
-    {
         id: 1,
         title: "Thuyết minh thông minh",
         author: 'Trung uý Phan Xuân Thắng',
         image: '/images/anh.jpg',
         sound: '/images/sangkien.mp3'
+    },
+    {
+        id: 2,
+        title: "Mặt nạ phòng hóa đa dụng",
+        author: 'Thượng úy Lương Quang Hùng',
+        image: '/images/baibanak.jpg',
+        sound: ''
     },
 ]
 
