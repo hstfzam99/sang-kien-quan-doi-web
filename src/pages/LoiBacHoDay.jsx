@@ -3,7 +3,7 @@ import { OPACITY_TO_HEX, PageTitleText } from '../constants'
 
 export const LoiBacHoDay = () => {
     return (
-        <Container sx={{ marginTop: 8 }}>
+        <Container sx={{ marginTop: { xs: 4, md: 8 } }}>
             <PageTitleText>Lời Bác Hồ dạy</PageTitleText>
             <List />
         </Container>
@@ -51,7 +51,7 @@ const items = [
 ]
 export const List = () => {
     return (
-        <Box>
+        <Box mt={{ xs: 2, md: 1 }}>
             <Stack spacing={2}>
                 {items.map((item) => <Item key={item.id} item={item} />)}
             </Stack>
@@ -62,15 +62,15 @@ export const List = () => {
 export const Item = (props) => {
     return (
         <Box sx={{ borderRadius: 1, border: `1px solid #DDDDDD` }}>
-            <Box px={2} py={1} sx={{ borderBottom: `1px solid #DDDDDD`, backgroundColor:'#f5f5f5' }}>
+            <Box px={2} py={1} sx={{ borderBottom: `1px solid #DDDDDD`, backgroundColor: '#f5f5f5' }}>
                 <Typography sx={{ color: '#1a3f5e', fontWeight: 650, fontSize: 15 }}>{props.item.tag}</Typography>
             </Box>
             <Box p={2}>
                 <Grid2 container>
-                    <Grid2 item size={3}>
+                    <Grid2 item size={{ xs: 12, md: 3 }}>
                         <img src="/images/loibacday1.jpg" />
                     </Grid2>
-                    <Grid2 item size={9}>
+                    <Grid2 item size={{ xs: 12, md: 9 }}>
                         <Stack spacing={1}>
                             <ATagStyled href={`/loi-bac-ho-day/${props.item.id}`}>
                                 <Typography sx={{ color: '#1a3f5e', fontWeight: 700, fontSize: 18 }}>{props.item.title}</Typography>
@@ -79,13 +79,13 @@ export const Item = (props) => {
                                 <Typography style={{ color: `#000000${OPACITY_TO_HEX['50']}` }}>{props.item.dateString}</Typography>
                                 <Typography style={{ color: `#000000${OPACITY_TO_HEX['50']}` }}>Đã xem: {props.item.view}</Typography>
                             </Stack>
-                            <Typography sx={{color:'#e74c3c', fontStyle:'italic', fontWeight:650}}> "{props.item.reference}"</Typography>
+                            <Typography sx={{ color: '#e74c3c', fontStyle: 'italic', fontWeight: 650 }}> "{props.item.reference}"</Typography>
                             <Typography> {props.item.summary}</Typography>
                         </Stack>
                     </Grid2>
                 </Grid2>
             </Box>
-        </Box>
+        </Box >
     )
 }
 

@@ -1,14 +1,14 @@
-import { Box, OutlinedInput } from "@mui/material"
-import { Banner } from "../pages/Banner"
-import { DesktopHeader } from "./Header"
+import { Box } from "@mui/material"
 import { Outlet } from "react-router"
+import { Banner } from "../pages/Banner"
 import { Footer } from "./Footer"
+import { Header } from "./Header"
 
 export const Layout = () =>{
     return (
         <Box>
             <Banner/>
-            <DesktopHeader/>
+            <Header/>
             <Outlet/>
             <Footer/>
         </Box>

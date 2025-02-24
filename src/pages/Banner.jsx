@@ -15,10 +15,10 @@ export const Banner = () => {
             }}>
                 <BoxAbsolute>
                     <Box >
-                        <BannerTextStyled sx={{ fontWeight: 700, fontSize: 52 }}>
+                        <BannerTextStyled sx={{ fontWeight: 700, fontSize: { xs: 32, md: 52 } }}>
                             Quân đội nhân dân Việt Nam
                         </BannerTextStyled>
-                        <BannerTextStyled sx={{ fontWeight: 500, fontSize: 40 }}>
+                        <BannerTextStyled sx={{ fontWeight: 500, fontSize: { xs: 24, md: 40 } }}>
                             Quân đội ta từ nhân dân mà ra, vì nhân dân mà chiến đấu
                         </BannerTextStyled>
 
@@ -44,7 +44,7 @@ const BoxAbsolute = styled(Box)({
     height: '100%',
     backgroundColor: `#000000${OPACITY_TO_HEX['67']}`,
 
-    display:'flex',
-    alignItems:'center',
-    justifyContent:'center'
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
 })

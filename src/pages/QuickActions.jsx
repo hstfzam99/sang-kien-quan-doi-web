@@ -25,12 +25,12 @@ const actions = [
 ]
 export const QuickActions = () => {
     return (
-        <Box mt={8}>
+        <Box mt={{ xs: 4, md: 8 }}>
             <SectionContainer>
                 <Grid2 container spacing={2}>
 
                     {actions.map((action) =>
-                        <Grid2 item size={6} sx={{ backgroundColor: 'white' }}>
+                        <Grid2 item size={{ xs: 12, md: 6 }} sx={{ backgroundColor: 'white' }}>
 
                             <QuickActionItem
                                 title={action.title}

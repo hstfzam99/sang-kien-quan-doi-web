@@ -1,8 +1,11 @@
 import { styled, Typography } from "@mui/material";
 
-export const PageTitleText = styled(Typography)({
+export const PageTitleText = styled(Typography)(({ theme }) => ({
     color: 'black',
-    fontSize: 48,
     fontWeight: 600,
-    textAlign:'center'
-})
+    textAlign: 'center',
+    fontSize: '28px',
+    [theme.breakpoints.up('md')]: {
+        fontSize: '48px',
+    },
+}));

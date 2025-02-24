@@ -16,12 +16,12 @@ const items = [
 ]
 export const NhaTruyenThong = () => {
     return (
-        <Box mt={8}>
+        <Box mt={{xs:4, md:8}}>
             <PageTitleText>
                 Nhà Truyền Thống
             </PageTitleText>
 
-            <Box mt={8}>
+            <Box mt={{xs:4, md:8}}>
                 <SectionContainer>
                     <Container>
 

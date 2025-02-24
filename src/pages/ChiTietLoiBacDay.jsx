@@ -13,7 +13,7 @@ export const ChiTietLoiBacDay = () => {
                 <Typography>Đã xem: {'476'}</Typography>
             </Stack>
             
-            <img src="/images/loibacday1-big.jpg"/>
+            <img src="/images/loibacday1-big.jpg" style={{maxWidth:'100%'}}/>
             <Typography>
                 Trải qua 79 năm xây dựng, chiến đấu, trưởng thành dưới sự lãnh đạo của Đảng, trực tiếp là Quân uỷ Trung ương - Bộ Quốc phòng, quân và dân Quân khu 3 đoàn kết một lòng, chủ động, sáng tạo hoàn thành xuất sắc mọi nhiệm vụ:
                 Trải qua 79 năm xây dựng, chiến đấu, trưởng thành dưới sự lãnh đạo của Đảng, trực tiếp là Quân uỷ Trung ương - Bộ Quốc phòng, quân và dân Quân khu 3 đoàn kết một lòng, chủ động, sáng tạo hoàn thành xuất sắc mọi nhiệm vụ:
