@@ -3,7 +3,7 @@ import { PageTitleText } from "../constants/styled"
 
 export const Introduction = () => {
     return (
-        <Container sx={{ marginTop: 8 }}>
+        <Container sx={{ marginTop: { xs: 4, md: 8 } }}>
             <PageTitleText mb={1}>
                 Quân đội nhân dân Việt Nam
             </PageTitleText>
@@ -52,7 +52,7 @@ export const Introduction = () => {
 
 const IntroEmphasisText = styled(Typography)({
     color: '#000000',
-    fontWeight:700
+    fontWeight: 700
 })
 const IntroText = styled(Typography)({
     color: '#000000',
