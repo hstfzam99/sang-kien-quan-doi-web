@@ -21,15 +21,14 @@ const items = [
 
 export const SangKien = () => {
     return (
-        <Box mt={{xs:4, md:8}}>
+        <Box mt={{ xs: 4, md: 8 }}>
             <PageTitleText>
                 Sáng kiến quân đội
             </PageTitleText>
 
-            <Box mt={{xs:4, md:8}}>
+            <Box mt={{ xs: 4, md: 8 }}>
                 <SectionContainer>
                     <Container>
-
                         <Grid2 container spacing={4}>
                             {items.map((item) =>
                                 <Grid2 item size={{ xs: 12, md: 4 }} sx={{ backgroundColor: 'white' }}>

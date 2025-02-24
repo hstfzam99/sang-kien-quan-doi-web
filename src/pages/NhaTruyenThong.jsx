@@ -16,18 +16,17 @@ const items = [
 ]
 export const NhaTruyenThong = () => {
     return (
-        <Box mt={{xs:4, md:8}}>
+        <Box mt={{ xs: 4, md: 8 }}>
             <PageTitleText>
                 Nhà Truyền Thống
             </PageTitleText>
 
-            <Box mt={{xs:4, md:8}}>
+            <Box mt={{ xs: 4, md: 8 }}>
                 <SectionContainer>
                     <Container>
-
                         <Grid2 container spacing={4}>
                             {items.map((item) =>
-                                <Grid2 item size={4} sx={{ backgroundColor: 'white' }}>
+                                <Grid2 item size={{ xs: 12, md: 4 }} sx={{ backgroundColor: 'white' }}>
 
                                     <NhaTruyenThongItem
                                         key={item.id}
