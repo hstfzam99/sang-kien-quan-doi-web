@@ -1,12 +1,15 @@
 import { Box, styled, Typography } from "@mui/material"
 import { OPACITY_TO_HEX } from "../constants/color"
+import { useTheme, useMediaQuery } from '@mui/material';
 
 export const Banner = () => {
+    const theme = useTheme();
+    const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
     return (
         <Box mb={3}>
             <Box sx={{
                 backgroundImage: 'url(images/banner.jpg)',
-                height: '50vh',
+                height: { xs: '30vh', md: '50vh' },
                 width: '100%',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
@@ -14,20 +17,17 @@ export const Banner = () => {
                 position: 'relative'
             }}>
                 <BoxAbsolute>
-                    <Box >
+                    <Box sx={{ paddingX: { xs: 1, md: 1 } }}>
                         <BannerTextStyled sx={{ fontWeight: 700, fontSize: { xs: 32, md: 52 } }}>
-                            Quân đội nhân dân Việt Nam
+                            Quân đội nhân dân {isMdUp ? "" : <br />} Việt Nam
                         </BannerTextStyled>
                         <BannerTextStyled sx={{ fontWeight: 500, fontSize: { xs: 24, md: 40 } }}>
                             Quân đội ta từ nhân dân mà ra, vì nhân dân mà chiến đấu
                         </BannerTextStyled>
-
                     </Box>
                 </BoxAbsolute>
             </Box>
-
         </Box>
-
     )
 }
 
