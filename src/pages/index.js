@@ -1,6 +1,7 @@
 export * from './Home'
 export * from './SangKien'
 export * from './ChiTietSangKien'
+export * from './ChiTietSangKien1ByHTML'
 export * from './NhaTruyenThong'
 export * from './LoiBacHoDay'
 export * from './ChiTietLoiBacDay'
